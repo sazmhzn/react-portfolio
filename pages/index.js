@@ -121,16 +121,16 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={code} className="mx-auto" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
+                Frontend developer
               </h3>
               <p className="py-2">
-                Creating elegant designs suited for your needs foolowing core
-                design theory.
+              I like to code things from scratch, and enjoy bringing ideas to life in the browser.
               </p>
               <h4 className="py-4 text-teal-600">Languages I use</h4>
               <p className="text-gray-800 py-1">HTML/CSS and JavaSript</p>
               <p className="text-gray-800 py-1">React.js and Next.jS</p>
-              <p className="text-gray-800 py-1">SASS and Tailwindcss</p>
+              <p className="text-gray-800 py-1">Sass and Tailwindcss</p>
+              <p className="text-gray-800 py-1">Git</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image
@@ -140,16 +140,14 @@ export default function Home() {
                 height={100}
               />
               <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
+                Mentor
               </h3>
               <p className="py-2">
-                Creating elegant designs suited for your needs foolowing core
-                design theory.
+              I genuinely care about people, and love helping fellow designers work on their craft.
               </p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <h4 className="py-4 text-teal-600">Experiences I draw from:</h4>
+              <p className="text-gray-800 py-1">UI/UX</p>
+              <p className="text-gray-800 py-1">Freelancing</p>
             </div>
           </div>
         </section>
