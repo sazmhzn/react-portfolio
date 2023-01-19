@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import Image from "next/image";
 import avatar from "../public/sumar.png";
 import design from "../public/design.png";
@@ -15,6 +15,22 @@ import web6 from "../public/web6.png";
 import { useState } from "react";
 
 export default function Home() {
+
+   // Function will execute on click of button
+   const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch('SamplePDF.pdf').then(response => {
+        response.blob().then(blob => {
+            // Creating new object of PDF file
+            const fileURL = window.URL.createObjectURL(blob);
+            // Setting various property values
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = 'resume.pdf';
+            alink.click();
+        })
+    })
+}
 
   const [darkMode, setDarkMode] = useState(false);
 
@@ -34,7 +50,7 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" />
               </li>
-              <li>
+              <li onClick={onButtonClick}>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                   href="#"
@@ -59,6 +75,7 @@ export default function Home() {
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
             <AiFillGithub />
             <AiFillLinkedin />
+            <AiFillInstagram />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={avatar} className="object-cover" />
@@ -110,10 +127,10 @@ export default function Home() {
                 Creating elegant designs suited for your needs foolowing core
                 design theory.
               </p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <h4 className="py-4 text-teal-600">Languages I use</h4>
+              <p className="text-gray-800 py-1">HTML/CSS and JavaSript</p>
+              <p className="text-gray-800 py-1">React.js and Next.jS</p>
+              <p className="text-gray-800 py-1">SASS and Tailwindcss</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image
