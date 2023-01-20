@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { CgFigma } from "react-icons/cg";
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import Image from "next/image";
 import avatar from "../public/sumar.png";
@@ -19,7 +20,7 @@ export default function Home() {
    // Function will execute on click of button
    const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch('SamplePDF.pdf').then(response => {
+    fetch('resume.pdf').then(response => {
         response.blob().then(blob => {
             // Creating new object of PDF file
             const fileURL = window.URL.createObjectURL(blob);
@@ -74,8 +75,9 @@ export default function Home() {
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
             <a href="https://github.com/sazmhzn"><AiFillGithub /></a> 
-            <a href="linkedin.com/in/suron-maharjan"> <AiFillLinkedin /></a>
+            <a href="https://www.linkedin.com/in/suron-maharjan/"> <AiFillLinkedin /></a>
             <a href="https://www.instagram.com/frontendstuff/"><AiFillInstagram /></a> 
+            <a href="https://www.figma.com/@saz5"> <CgFigma /> </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={avatar} className="object-cover" />
