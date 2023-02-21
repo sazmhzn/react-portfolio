@@ -130,9 +130,9 @@ export default function Home() {
               </p>
               <h4 className="py-4 text-teal-600">Languages I use</h4>
               <p className="text-gray-800 py-1">HTML/CSS and JavaSript</p>
-              <p className="text-gray-800 py-1">React.js and Next.jS</p>
+              <p className="text-gray-800 py-1">JQuery and ReactJS</p>
               <p className="text-gray-800 py-1">Sass and Tailwindcss</p>
-              <p className="text-gray-800 py-1">Git</p>
+              <p className="text-gray-800 py-1">Git and Github</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image
