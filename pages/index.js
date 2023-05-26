@@ -13,9 +13,10 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
-import web7 from "../public/YUMYUM.png"
-import web8 from "../public/inventory.jpg"
-import web9 from "../public/plantPeace.png"
+import web7 from "../public/YUMYUM.png";
+import web8 from "../public/inventory.jpg";
+import web9 from "../public/plantPeace.png";
+import web10 from "../public/ParkOpen.jpg";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -296,6 +297,18 @@ export default function Home() {
             <Link href={'https://www.figma.com/file/is1cNmBRjvDAjy7GEpCqLg/Food-ordering-app?node-id=0%3A1&t=Qe1xw1eGHeJHKFO9-1'}>
             <Image
                 src={web9}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+              />
+            </Link>
+              
+            </div>
+
+            <div className="basis-1/3  flex-1">
+            <Link href={'https://www.figma.com/file/is1cNmBRjvDAjy7GEpCqLg/Food-orderin-?node-id=0%3A1&t=Qe1xw1eGHeJHKFO9-1'}>
+            <Image
+                src={web10}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
