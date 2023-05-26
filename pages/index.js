@@ -194,14 +194,18 @@ export default function Home() {
           </p>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
+              <Link href={'https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/Maaemo%20Restaurant'}>
               <Image
                 src={web1}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
               />
+              </Link>
+              
             </div>
             <div className="basis-1/3 flex-1">
+              <Link href={'https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/parallax'}>
               <Image
                 src={web2}
                 className="rounded-lg object-cover"
@@ -209,8 +213,11 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
               />
+              </Link>
+              
             </div>
             <div className="basis-1/3 flex-1">
+              <Link href={'https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/ETQ%20shoes'}>
               <Image
                 src={web3}
                 className="rounded-lg object-cover"
@@ -218,8 +225,11 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
               />
+              </Link>
+              
             </div>
             <div className="basis-1/3 flex-1">
+              <Link href={'https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/Project%20Moon'}>
               <Image
                 src={web4}
                 className="rounded-lg object-cover"
@@ -227,8 +237,11 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
               />
+              </Link>
+              
             </div>
             <div className="basis-1/3 flex-1">
+              <Link href={'https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/yogabest%20first'}>
               <Image
                 src={web5}
                 className="rounded-lg object-cover"
@@ -236,8 +249,11 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
               />
+              </Link>
+              
             </div>
             <div className="basis-1/3 flex-1">
+              <Link href={'https://github.com/sazmhzn/Light-phone-copy.git'}> 
               <Image
                 src={web6}
                 className="rounded-lg object-cover"
@@ -245,6 +261,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
               />
+              </Link>          
             </div>
           </div>
 
