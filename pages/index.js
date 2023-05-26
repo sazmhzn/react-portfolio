@@ -282,7 +282,7 @@ export default function Home() {
               
             </div>
             <div className="basis-1/3 flex-1">
-              <Link href="" >
+              <Link href={'https://www.figma.com/community/file/1127492454021442790/Inventory-Management-system'} >
               <Image
                 src={web8}
                 className="rounded-lg object-cover"
@@ -294,7 +294,7 @@ export default function Home() {
             </div>
           
             <div className="basis-1/3  flex-1">
-            <Link href={'https://www.figma.com/file/is1cNmBRjvDAjy7GEpCqLg/Food-ordering-app?node-id=0%3A1&t=Qe1xw1eGHeJHKFO9-1'}>
+            <Link href={'https://www.figma.com/community/file/1241799969703495135/PlantPeace'}>
             <Image
                 src={web9}
                 className="rounded-lg object-cover"
@@ -306,7 +306,7 @@ export default function Home() {
             </div>
 
             <div className="basis-1/3  flex-1">
-            <Link href={'https://www.figma.com/file/is1cNmBRjvDAjy7GEpCqLg/Food-orderin-?node-id=0%3A1&t=Qe1xw1eGHeJHKFO9-1'}>
+            <Link href={'https://www.figma.com/community/file/1211195485606089534/OpenPark'}>
             <Image
                 src={web10}
                 className="rounded-lg object-cover"
