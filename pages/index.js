@@ -252,7 +252,7 @@ export default function Home() {
             Some UI designs
           </p>    
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/4  flex-1">
+            <div className="basis-1/3  flex-1">
             <Link href={'https://www.figma.com/file/is1cNmBRjvDAjy7GEpCqLg/Food-ordering-app?node-id=0%3A1&t=Qe1xw1eGHeJHKFO9-1'}>
             <Image
                 src={web7}
@@ -263,7 +263,7 @@ export default function Home() {
             </Link>
               
             </div>
-            <div className="basis-1/4 flex-1">
+            <div className="basis-1/3 flex-1">
               <Link href="" >
               <Image
                 src={web8}
@@ -275,7 +275,7 @@ export default function Home() {
 
             </div>
           
-            <div className="basis-1/4  flex-1">
+            <div className="basis-1/3  flex-1">
             <Link href={'https://www.figma.com/file/is1cNmBRjvDAjy7GEpCqLg/Food-ordering-app?node-id=0%3A1&t=Qe1xw1eGHeJHKFO9-1'}>
             <Image
                 src={web9}
