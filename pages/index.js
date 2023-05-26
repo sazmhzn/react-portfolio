@@ -264,15 +264,17 @@ export default function Home() {
               
             </div>
             <div className="basis-1/4 flex-1">
-    
+              <Link href="" >
               <Image
                 src={web8}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
               />
-            </div>
+              </Link>
 
+            </div>
+          
             <div className="basis-1/4  flex-1">
             <Link href={'https://www.figma.com/file/is1cNmBRjvDAjy7GEpCqLg/Food-ordering-app?node-id=0%3A1&t=Qe1xw1eGHeJHKFO9-1'}>
             <Image
