@@ -55,7 +55,7 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl"
+                  className="cursor-pointer text-2xl dark:bg-white"
                 />
               </li>
               <li onClick={onButtonClick}>
