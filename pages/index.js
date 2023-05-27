@@ -271,7 +271,7 @@ export default function Home() {
           </p>    
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3  flex-1">
-            <Link href={'https://www.figma.com/file/is1cNmBRjvDAjy7GEpCqLg/Food-ordering-app?node-id=0%3A1&t=Qe1xw1eGHeJHKFO9-1'}>
+            <Link href={'https://www.figma.com/community/file/1080510531812970328/Food-ordering-app'}>
             <Image
                 src={web7}
                 className="rounded-lg object-cover"
