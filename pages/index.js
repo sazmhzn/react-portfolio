@@ -299,7 +299,7 @@ export default function Home() {
                 src={web10}
                 className="rounded-lg object-cover"
                 width={"100%"}
-                height={"100%"}
+                height={"90%"}
               />
             </Link>
               
@@ -311,7 +311,7 @@ export default function Home() {
                 src={web10}
                 className="rounded-lg object-cover"
                 width={"100%"}
-                height={"100%"}
+                height={"90%"}
               />
             </Link>
               
