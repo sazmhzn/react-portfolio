@@ -193,7 +193,7 @@ export default function Home() {
           <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
             Some website cloning I did
           </p>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="flex flex-col gap-10 pt-10 pb-5 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
               <Link href={'https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/Maaemo%20Restaurant'}>
               <Image
@@ -266,7 +266,7 @@ export default function Home() {
             </div>
           </div>
 
-          <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
+          <p className="text-md pt-10 pb-5  leading-8 text-gray-800 dark:text-white">
             Some UI designs
           </p>    
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
