@@ -294,7 +294,7 @@ export default function Home() {
             </div>
           
             <div className="basis-1/3  flex-1">
-            <Link href={'https://www.figma.com/community/file/1241799969703495135/PlantPeace'}>
+            <Link href={'https://www.figma.com/community/file/1211195485606089534/OpenPark'}>
             <Image
                 src={web9}
                 className="rounded-lg object-cover"
@@ -306,7 +306,8 @@ export default function Home() {
             </div>
 
             <div className="basis-1/3  flex-1">
-            <Link href={'https://www.figma.com/community/file/1211195485606089534/OpenPark'}>
+            
+            <Link href={'https://www.figma.com/community/file/1241799969703495135/PlantPeace'}>
             <Image
                 src={web10}
                 className="rounded-lg object-cover"
