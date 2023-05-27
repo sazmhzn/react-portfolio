@@ -16,7 +16,7 @@ import web6 from "../public/web6.png";
 import web7 from "../public/YUMYUM.png";
 import web8 from "../public/inventory.jpg";
 import web9 from "../public/ParkOpen.jpg";
-import web10 from "../public/plantPeace.png";
+import web10 from "../public/PlantPeace.png";
 
 import { useState } from "react";
 import Link from "next/link";
