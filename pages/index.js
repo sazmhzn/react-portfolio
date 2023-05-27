@@ -15,7 +15,7 @@ import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import web7 from "../public/YUMYUM.png";
 import web8 from "../public/inventory.jpg";
-import web9 from "../public/plantPeace.png";
+// import web9 from "../public/plantPeace.png";
 import web10 from "../public/ParkOpen.jpg";
 
 import { useState } from "react";
@@ -58,7 +58,7 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl dark:text-white"
+                  className="cursor-pointer text-2xl  dark:text-white"
                 />
               </li>
               <li onClick={onButtonClick}>
@@ -296,7 +296,7 @@ export default function Home() {
             <div className="basis-1/3  flex-1">
             <Link href={'https://www.figma.com/community/file/1241799969703495135/PlantPeace'}>
             <Image
-                src={web9}
+                src={web10}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
