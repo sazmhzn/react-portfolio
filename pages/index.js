@@ -17,6 +17,7 @@ import web7 from "../public/YUMYUM.png";
 import web8 from "../public/inventory.jpg";
 import web9 from "../public/ParkOpen.jpg";
 import web10 from "../public/PlantPeace.png";
+import web11 from "../public/MusicWorld.png";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -257,6 +258,18 @@ export default function Home() {
               <Link href={'https://github.com/sazmhzn/Light-phone-copy.git'}> 
               <Image
                 src={web6}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+              </Link>          
+            </div>
+
+            <div className="basis-1/3 flex-1">
+              <Link href={'https://github.com/sazmhzn/frontend-assignment.git'}> 
+              <Image
+                src={web11}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
