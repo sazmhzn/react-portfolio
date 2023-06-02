@@ -267,7 +267,7 @@ export default function Home() {
             </div>
 
             <div className="basis-1/3 flex-1">
-              <Link href={'frontend-assignment-git-main-sazmhzn.vercel.app'}> 
+              <Link href={'https://frontend-assignment-git-main-sazmhzn.vercel.app'}> 
               <Image
                 src={web11}
                 className="rounded-lg object-cover"
