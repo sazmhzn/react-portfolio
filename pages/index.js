@@ -18,6 +18,8 @@ import web8 from "../public/inventory.jpg";
 import web9 from "../public/ParkOpen.jpg";
 import web10 from "../public/PlantPeace.png";
 import web11 from "../public/MusicWorld.png";
+import poster1 from "../public/MelonPoster.png";
+import poster2 from "../public/SojuPoster.png";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -331,6 +333,35 @@ export default function Home() {
               
             </div>
           </div>
+
+
+{/* for graphic designing projects */}
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3  flex-1">
+            <Link href={'https://www.instagram.com/ghinlagdo.design/'}>
+            <Image
+                src={poster1}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+              />
+            </Link>
+              
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Link href={'https://www.instagram.com/ghinlagdo.design/'} >
+              <Image
+                src={poster2}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+              />
+              </Link>
+
+            </div>
+          </div>
+
+
         </section>
       </main>
     </div>
