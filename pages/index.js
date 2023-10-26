@@ -110,7 +110,7 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Welcome to my web design portfolio! I am a skilled and experienced
+              Welcome to my design portfolio! I am a skilled and experienced
               web designer with a passion for creating visually stunning and
               user-friendly websites. My portfolio showcases a selection of my
               recent projects, highlighting my ability to design and develop
