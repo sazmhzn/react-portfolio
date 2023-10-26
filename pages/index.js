@@ -26,7 +26,7 @@ export default function Home() {
   // Function will execute on click of button
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch("Surohan_Maharjan_CV.pdf").then((response) => {
+    fetch("Surohan_Maharjan_Designer_Resume.pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
