@@ -336,6 +336,9 @@ export default function Home() {
 
 
 {/* for graphic designing projects */}
+<p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
+            Some Graphic design I created
+          </p>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3  flex-1">
             <Link href={'https://www.instagram.com/ghinlagdo.design/'}>
