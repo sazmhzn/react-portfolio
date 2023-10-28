@@ -94,7 +94,7 @@ export default function Home() {
               {" "}
               <AiFillLinkedin />
             </a>
-            <a href="https://www.instagram.com/frontendworks/">
+            <a href="https://www.instagram.com/ghinlagdo.design/">
               <AiFillInstagram />
             </a>
             <a href="https://www.figma.com/@saz5">
