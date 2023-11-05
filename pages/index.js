@@ -120,7 +120,7 @@ export default function Home() {
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               I offer from a wide range of services, including programming and
-              designing.
+              designing. 
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -172,6 +172,7 @@ export default function Home() {
               </p>
               <h4 className="py-4 text-teal-600">Experiences I draw from:</h4>
               <p className="text-gray-800 py-1">UI/UX</p>
+              <p className="text-gray-800 py-1">Graphic Designing</p>
               <p className="text-gray-800 py-1">Freelancing</p>
             </div>
           </div>
