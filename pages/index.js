@@ -13,22 +13,140 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+
 import web7 from "../public/YUMYUM.png";
 import web8 from "../public/inventory.jpg";
 import web9 from "../public/ParkOpen.jpg";
 import web10 from "../public/PlantPeace.png";
-import web11 from "../public/MusicWorld.png";
+import web11 from "../public/Dashboard.png";
+import ui5 from "../public/Highland.png";
 import poster1 from "../public/MelonPoster.png";
 import poster2 from "../public/SojuPoster.png";
+import poster3 from "../public/PinkFrappe.png";
+import poster4 from "../public/Dew.png";
+import poster5 from "../public/Mawe.png";
+import poster6 from "../public/Monster.png";
+import poster7 from "../public/CoconutWater.png";
+import poster8 from "../public/Beer.png";
+import poster9 from "../public/dublight.png";
 
 import { useState } from "react";
 import Link from "next/link";
 
 export default function Home() {
+  const webImages = [
+    {
+      src: web1,
+      href: "https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/Maaemo%20Restaurant",
+      alt: "web1",
+    },
+    {
+      src: web2,
+      href: "https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/parallax",
+      alt: "web2",
+    },
+    {
+      src: web3,
+      href: "https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/ETQ%20shoes",
+      alt: "web3",
+    },
+    {
+      src: web4,
+      href: "https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/Project%20Moon",
+      alt: "web4",
+    },
+    {
+      src: web5,
+      href: "https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/yogabest%20first",
+      alt: "web5",
+    },
+    {
+      src: web6,
+      href: "https://github.com/sazmhzn/Light-phone-copy.git",
+      alt: "web6",
+    },
+  ];
+
+  const uiImages = [
+    {
+      src: web7,
+      href: "https://www.figma.com/community/file/1080510531812970328/Food-ordering-app",
+      alt: "web7",
+    },
+    {
+      src: web8,
+      href: "https://www.figma.com/community/file/1127492454021442790/Inventory-Management-system",
+      alt: "web8",
+    },
+    {
+      src: web9,
+      href: "https://www.figma.com/community/file/1211195485606089534/OpenPark",
+      alt: "web9",
+    },
+    {
+      src: web10,
+      href: "https://www.figma.com/community/file/1241799969703495135/PlantPeace",
+      alt: "web10",
+    },
+    {
+      src: ui5,
+      href: "https://www.figma.com/community/file/1391965654620229866/travelling-app",
+      alt: "ui5",
+    },
+  ];
+
+  const posterImages = [
+    {
+      src: poster1,
+      href: "https://www.instagram.com/ghinlagdo.design/",
+      alt: "poster1",
+    },
+    {
+      src: poster2,
+      href: "https://www.instagram.com/ghinlagdo.design/",
+      alt: "poster2",
+    },
+    {
+      src: poster3,
+      href: "https://www.instagram.com/ghinlagdo.design/",
+      alt: "poster3",
+    },
+    {
+      src: poster4,
+      href: "https://www.instagram.com/ghinlagdo.design/",
+      alt: "poster4",
+    },
+    {
+      src: poster5,
+      href: "https://www.instagram.com/ghinlagdo.design/",
+      alt: "poster5",
+    },
+    {
+      src: poster6,
+      href: "https://www.instagram.com/ghinlagdo.design/",
+      alt: "poster6",
+    },
+    {
+      src: poster7,
+      href: "https://www.instagram.com/ghinlagdo.design/",
+      alt: "poster6",
+    },
+    {
+      src: poster8,
+      href: "https://www.instagram.com/ghinlagdo.design/",
+      alt: "poster6",
+    },
+    {
+      src: poster9,
+      href: "https://www.instagram.com/ghinlagdo.design/",
+      alt: "poster6",
+    },
+  ];
+
   // Function will execute on click of button
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch("Surohan_Maharjan_Designer_Resume.pdf").then((response) => {
+    fetch("Surohan_Maharjan_Resume.pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
@@ -110,19 +228,22 @@ export default function Home() {
         {/* Footer section */}
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Services I offer</h3>
+            <h3 className="text-3xl font-bold py-4 text-teal-600 dark:text-white">
+              Services I offer
+            </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Welcome to my design portfolio! I am a skilled and experienced
-              web designer with a passion for creating visually stunning and
+              Welcome to my design portfolio! I am a skilled and experienced web
+              designer with a passion for creating visually stunning and
               user-friendly websites. My portfolio showcases a selection of my
               recent projects, highlighting my ability to design and develop
               websites that are both beautiful and functional.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               I offer from a wide range of services, including programming and
-              designing. 
+              designing.
             </p>
           </div>
+
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image
@@ -177,9 +298,12 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <section>
           <div className="dark:text-white">
-            <h3 className="text-3xl py-1">Portfolio</h3>
+            <h3 className="text-3xl font-bold py-4 text-teal-600 dark:text-white py-1">
+              Portfolio
+            </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               Welcome to my web design portfolio! I am a skilled and experienced
               web designer with a passion for creating visually stunning and
@@ -187,89 +311,115 @@ export default function Home() {
               recent projects, highlighting my ability to design and develop
               websites that are both beautiful and functional.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
+            <p className="text-md py-0 leading-8 text-gray-800 dark:text-white">
               I offer from a wide range of services, including programming and
               designing.
             </p>
           </div>
 
           {/* Programiing */}
-          <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-            Some website cloning I did
+          <p className="text-2xl text-center mt-6 font-semibold text-gray-800 dark:text-white">
+            Frontend Projects
           </p>
-          <div className="flex flex-col gap-10 pt-10 pb-5 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
-              <Link href={'https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/Maaemo%20Restaurant'}>
-              <Image
-                src={web1}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-              />
+          <div className="flex flex-col gap-10 pt-8 pb-5 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/4 flex-1">
+              <Link
+                href={
+                  "https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/Maaemo%20Restaurant"
+                }
+              >
+                <Image
+                  src={web1}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                />
               </Link>
-              
             </div>
-            <div className="basis-1/3 flex-1">
-              <Link href={'https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/parallax'}>
-              <Image
-                src={web2}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
+            <div className="basis-1/4 flex-1">
+              <Link
+                href={
+                  "https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/parallax"
+                }
+              >
+                <Image
+                  src={web2}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
               </Link>
-              
             </div>
-            <div className="basis-1/3 flex-1">
-              <Link href={'https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/ETQ%20shoes'}>
-              <Image
-                src={web3}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
+            <div className="basis-1/4 flex-1">
+              <Link
+                href={
+                  "https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/ETQ%20shoes"
+                }
+              >
+                <Image
+                  src={web3}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
               </Link>
-              
             </div>
-            <div className="basis-1/3 flex-1">
-              <Link href={'https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/Project%20Moon'}>
-              <Image
-                src={web4}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
+            <div className="basis-1/4 flex-1">
+              <Link
+                href={
+                  "https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/Project%20Moon"
+                }
+              >
+                <Image
+                  src={web4}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
               </Link>
-              
             </div>
-            <div className="basis-1/3 flex-1">
-              <Link href={'https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/yogabest%20first'}>
-              <Image
-                src={web5}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
+            <div className="basis-1/4 flex-1">
+              <Link
+                href={
+                  "https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/yogabest%20first"
+                }
+              >
+                <Image
+                  src={web5}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
               </Link>
-              
             </div>
-            <div className="basis-1/3 flex-1">
-              <Link href={'https://github.com/sazmhzn/Light-phone-copy.git'}> 
-              <Image
-                src={web6}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-              </Link>          
+            <div className="basis-1/4 flex-1">
+              <Link href={"https://github.com/sazmhzn/Light-phone-copy.git"}>
+                <Image
+                  src={web6}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </Link>
+            </div>
+            <div className="w-[30%] basis-2/3 flex-1">
+              <Link href={"https://github.com/sazmhzn/Light-phone-copy.git"}>
+                <Image
+                  src={web11}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </Link>
             </div>
 
-            <div className="basis-1/3 flex-1">
+            {/* <div className="basis-1/3 flex-1">
               <Link href={'https://frontend-assignment-git-main-sazmhzn.vercel.app'}> 
               <Image
                 src={web11}
@@ -279,93 +429,107 @@ export default function Home() {
                 layout="responsive"
               />
               </Link>          
-            </div>
+            </div> */}
           </div>
 
-          <p className="text-md pt-10 pb-5  leading-8 text-gray-800 dark:text-white">
-            Some UI designs
-          </p>    
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3  flex-1">
-            <Link href={'https://www.figma.com/community/file/1080510531812970328/Food-ordering-app'}>
-            <Image
-                src={web7}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-              />
-            </Link>
-              
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Link href={'https://www.figma.com/community/file/1127492454021442790/Inventory-Management-system'} >
-              <Image
-                src={web8}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-              />
-              </Link>
-
-            </div>
-          
-            <div className="basis-1/3  flex-1">
-            <Link href={'https://www.figma.com/community/file/1211195485606089534/OpenPark'}>
-            <Image
-                src={web9}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-              />
-            </Link>
-              
-            </div>
-
-            <div className="basis-1/3  flex-1">
-            
-            <Link href={'https://www.figma.com/community/file/1241799969703495135/PlantPeace'}>
-            <Image
-                src={web10}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-              />
-            </Link>
-              
-            </div>
-          </div>
-
-
-{/* for graphic designing projects */}
-<p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-            Some Graphic design I created
+          <p className="text-2xl text-center mt-6 font-semibold text-gray-800 dark:text-white">
+            UI Projects
           </p>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3  flex-1">
-            <Link href={'https://www.instagram.com/ghinlagdo.design/'}>
-            <Image
-                src={poster1}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-              />
-            </Link>
-              
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Link href={'https://www.instagram.com/ghinlagdo.design/'} >
-              <Image
-                src={poster2}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-              />
+            <div className="basis-1/4 flex-1">
+              <Link
+                href={
+                  "https://www.figma.com/community/file/1080510531812970328/Food-ordering-app"
+                }
+              >
+                <Image
+                  src={web7}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                />
               </Link>
+            </div>
+            <div className="basis-1/4 flex-1">
+              <Link
+                href={
+                  "https://www.figma.com/community/file/1127492454021442790/Inventory-Management-system"
+                }
+              >
+                <Image
+                  src={web8}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                />
+              </Link>
+            </div>
 
+            <div className="basis-1/4 flex-1">
+              <Link
+                href={
+                  "https://www.figma.com/community/file/1211195485606089534/OpenPark"
+                }
+              >
+                <Image
+                  src={web9}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                />
+              </Link>
+            </div>
+            <div className="basis-1/4 flex-1">
+              <Link
+                href={
+                  "https://www.figma.com/community/file/1241799969703495135/PlantPeace"
+                }
+              >
+                <Image
+                  src={web10}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                />
+              </Link>
+            </div>
+            <div className="basis-1/4 flex-1">
+              <Link
+                href={
+                  "https://www.figma.com/community/file/1391965654620229866/travelling-app"
+                }
+              >
+                <Image
+                  src={ui5}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                />
+              </Link>
             </div>
           </div>
 
+          {/* for graphic designing projects */}
+          <p className="text-2xl text-center mt-6 font-semibold text-gray-800 dark:text-white">
+            Graphics Design
+          </p>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
 
+            {posterImages.map((item) => {
+              return (
+                <div className="basis-1/4 flex-1">
+                  <Link href={"https://www.instagram.com/ghinlagdo.design/"}>
+                    <Image
+                      src={item.src}
+                      className="rounded-lg object-cover"
+                      width={"100%"}
+                      height={"100%"}
+                    />
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
         </section>
       </main>
     </div>
