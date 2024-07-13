@@ -1,7 +1,12 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { CgFigma } from "react-icons/cg";
-import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import {
+  AiFillLinkedin,
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillBehanceSquare,
+} from "react-icons/ai";
 import Image from "next/image";
 import avatar from "../public/sumar.png";
 import design from "../public/design.png";
@@ -169,7 +174,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10 md:px-20 lg:40 dark:bg-gray-900">
+      <main className="bg-white px-20 md:px-20 lg:40 dark:bg-gray-900">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className=" text-xl font-burtons dark:text-white">
@@ -212,8 +217,8 @@ export default function Home() {
               {" "}
               <AiFillLinkedin />
             </a>
-            <a href="https://www.instagram.com/ghinlagdo.design/">
-              <AiFillInstagram />
+            <a href="https://www.behance.net/suronmaharjan">
+              <AiFillBehanceSquare />
             </a>
             <a href="https://www.figma.com/@saz5">
               {" "}
@@ -322,7 +327,7 @@ export default function Home() {
             Frontend Projects
           </p>
           <div className="flex flex-col gap-10 pt-8 pb-5 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/4 flex-1">
+            <div className="basis-1/4 flex-1 overflow-hidden rounded-lg">
               <Link
                 href={
                   "https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/Maaemo%20Restaurant"
@@ -330,13 +335,13 @@ export default function Home() {
               >
                 <Image
                   src={web1}
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover transition ease-in-out delay-150 hover:scale-150"
                   width={"100%"}
                   height={"100%"}
                 />
               </Link>
             </div>
-            <div className="basis-1/4 flex-1">
+            <div className="basis-1/4 flex-1 overflow-hidden rounded-lg">
               <Link
                 href={
                   "https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/parallax"
@@ -344,44 +349,39 @@ export default function Home() {
               >
                 <Image
                   src={web2}
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover transition ease-in-out delay-150 hover:scale-150"
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
                 />
               </Link>
             </div>
-            <div className="basis-1/4 flex-1">
-              <Link
-                href={
-                  "https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/ETQ%20shoes"
-                }
-              >
+            <div className="basis-1/4 flex-1 overflow-hidden rounded-lg">
+              <Link href={"https://sazmhzn.github.io/ETQclone.github.io/"}>
                 <Image
                   src={web3}
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover transition ease-in-out delay-150 hover:scale-150"
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
                 />
               </Link>
             </div>
-            <div className="basis-1/4 flex-1">
+            <div className="basis-1/4 flex-1 overflow-hidden rounded-lg">
               <Link
-                href={
-                  "https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/Project%20Moon"
-                }
+                href={"https://sazmhzn.github.io/ProjectMoonClone.github.io/"}
+                target="_blank"
               >
                 <Image
                   src={web4}
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover transition ease-in-out delay-150 hover:scale-150"
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
                 />
               </Link>
             </div>
-            <div className="basis-1/4 flex-1">
+            <div className="basis-1/4 flex-1 overflow-hidden rounded-lg">
               <Link
                 href={
                   "https://github.com/sazmhzn/HTML-CSS-JS/tree/d9071f73949d885364be7c07a3af5f15750643d1/yogabest%20first"
@@ -389,29 +389,29 @@ export default function Home() {
               >
                 <Image
                   src={web5}
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover transition ease-in-out delay-150 hover:scale-150"
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
                 />
               </Link>
             </div>
-            <div className="basis-1/4 flex-1">
-              <Link href={"https://github.com/sazmhzn/Light-phone-copy.git"}>
+            <div className="basis-1/4 flex-1 overflow-hidden rounded-lg">
+              <Link href={"https://sazmhzn.github.io/Light-phone-copy/"}>
                 <Image
                   src={web6}
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover transition ease-in-out delay-150 hover:scale-150"
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
                 />
               </Link>
             </div>
-            <div className="w-[30%] basis-2/3 flex-1">
-              <Link href={"https://github.com/sazmhzn/Light-phone-copy.git"}>
+            <div className="basis-1/4 flex-1 overflow-hidden rounded-lg">
+              <Link href={"https://sazmhzn.github.io/Light-phone-copy/"}>
                 <Image
                   src={web11}
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover transition ease-in-out delay-150 hover:scale-150"
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
@@ -514,7 +514,6 @@ export default function Home() {
             Graphics Design
           </p>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-
             {posterImages.map((item) => {
               return (
                 <div className="basis-1/4 flex-1">
