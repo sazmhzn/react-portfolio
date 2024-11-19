@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev & npx next-video sync -w",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -11,9 +11,11 @@
   "dependencies": {
     "@netlify/plugin-nextjs": "^5.5.1",
     "@next/font": "13.1.2",
-    "next": "14.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "eslint-config-next": "^14.2.15",
+    "next": "^14.2.15",
+    "next-video": "^1.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-icons": "^4.7.1",
     "sharp": "^0.33.4"
   },
