@@ -18,6 +18,7 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+import webMeitu from "../public/meitu.png";
 // import webVideo from "./public/video.mp4";
 
 import web7 from "../public/YUMYUM.png";
@@ -76,6 +77,12 @@ export default function Home() {
       src: web6,
       href: "https://github.com/sazmhzn/HTML-CSS-JS/tree/new-project-6",
       alt: "New Web Project 6",
+    },
+    {
+      type: "image",
+      src: webMeitu,
+      href: "https://meitupaint.com/src/index.html",
+      alt: "Meitupaints",
     },
     {
       type: "video",
@@ -341,15 +348,12 @@ export default function Home() {
           </div>
 
           {/* Programiing */}
-          <p className="text-2xl text-center mt-6 font-semibold text-gray-800 dark:text-white">
+          <p className="text-7xl text-center mt-6 font-semibold text-gray-800 dark:text-white">
             Frontend Projects
           </p>
-          <div className="grid grid-cols-3 gap-5 pt-8 pb-5">
+          <div className="columns-3 space-y-4 gap-5 mt-8 mb-10 ">
             {webMedia.map((media, index) => (
-              <div
-                key={index}
-                className="bg-red-300 w-full overflow-hidden rounded-lg"
-              >
+              <div key={index} className="w-full overflow-hidden rounded-lg">
                 <Link href={media.href} target="_blank">
                   {media.type === "image" ? (
                     <Image
@@ -363,7 +367,7 @@ export default function Home() {
                     <video
                       src={media.src}
                       autoPlay="true"
-                      className="rounded-lg bg-red-300 aspect-square object-cover transition ease-in-out delay-150"
+                      className="rounded-lg aspect-square object-cover transition ease-in-out delay-150"
                       controls
                     >
                       Your browser does not support the video tag.
@@ -374,7 +378,7 @@ export default function Home() {
             ))}
           </div>
 
-          <p className="text-2xl text-center mt-6 font-semibold text-gray-800 dark:text-white">
+          <p className="text-7xl my-6 text-center mt-6 font-semibold text-gray-800 dark:text-white">
             UI Projects
           </p>
           <div className="columns-3 gap-5">
@@ -398,7 +402,7 @@ export default function Home() {
           </div>
 
           {/* for graphic designing projects */}
-          <p className="text-2xl text-center mt-6 font-semibold text-gray-800 dark:text-white">
+          <p className="text-7xl text-center mt-6 font-semibold text-gray-800 dark:text-white">
             Graphics Design
           </p>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
