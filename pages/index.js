@@ -19,6 +19,8 @@ import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import webMeitu from "../public/meitu.png";
+import webYoom from "../public/yoom.jpg";
+import vSpicer from "../public/vspicer.png";
 // import webVideo from "./public/video.mp4";
 
 import web7 from "../public/YUMYUM.png";
@@ -27,6 +29,7 @@ import web9 from "../public/ParkOpen.jpg";
 import web10 from "../public/PlantPeace.png";
 import web11 from "../public/Dashboard.png";
 import ui5 from "../public/Highland.png";
+import meta from "../public/Metalogic.png";
 import poster1 from "../public/MelonPoster.png";
 import poster2 from "../public/SojuPoster.png";
 import poster3 from "../public/PinkFrappe.png";
@@ -42,41 +45,53 @@ import Link from "next/link";
 
 export default function Home() {
   const webMedia = [
-    {
-      type: "image",
-      src: web1, // Replace this with the new image source
-      href: "https://github.com/sazmhzn/HTML-CSS-JS/tree/new-project-1",
-      alt: "New Web Project 1",
-    },
-    {
-      type: "image",
-      src: web2,
-      href: "https://github.com/sazmhzn/HTML-CSS-JS/tree/new-project-2",
-      alt: "New Web Project 2",
-    },
+    // {
+    //   type: "image",
+    //   src: web1, // Replace this with the new image source
+    //   href: "https://github.com/sazmhzn/HTML-CSS-JS/tree/main/Maaemo%20Restaurant",
+    //   alt: "Maaemo Restaurant",
+    // },
+    // {
+    //   type: "image",
+    //   src: web2,
+    //   href: "https://github.com/sazmhzn/HTML-CSS-JS/tree/new-project-2",
+    //   alt: "New Web Project 2",
+    // },
     {
       type: "image",
       src: web3,
-      href: "https://github.com/sazmhzn/HTML-CSS-JS/tree/new-project-3",
-      alt: "New Web Project 3",
+      href: "https://sazmhzn.github.io/ETQclone.github.io/",
+      alt: "ETQ",
     },
     {
       type: "image",
       src: web4,
-      href: "https://github.com/sazmhzn/HTML-CSS-JS/tree/new-project-4",
+      href: "https://sazmhzn.github.io/ProjectMoonClone.github.io/",
       alt: "New Web Project 4",
     },
     {
       type: "image",
       src: web5,
-      href: "https://github.com/sazmhzn/HTML-CSS-JS/tree/new-project-5",
+      href: "https://sazmhzn.github.io/yogabest.github.io/",
       alt: "New Web Project 5",
     },
     {
       type: "image",
+      src: vSpicer,
+      href: "https://sazmhzn.github.io/vSpicerClone.github.io/",
+      alt: "vSpicer",
+    },
+    {
+      type: "image",
       src: web6,
-      href: "https://github.com/sazmhzn/HTML-CSS-JS/tree/new-project-6",
+      href: "https://sazmhzn.github.io/Light-phone-copy/",
       alt: "New Web Project 6",
+    },
+    {
+      type: "image",
+      src: webYoom,
+      href: "zoom-clone-tan-five.vercel.app",
+      alt: "Yoom",
     },
     {
       type: "image",
@@ -122,6 +137,11 @@ export default function Home() {
       src: ui5,
       href: "https://www.figma.com/community/file/1391965654620229866/travelling-app",
       alt: "Travel Booking",
+    },
+    {
+      src: meta,
+      href: "https://metalogic.com.np/",
+      alt: "Meta logic Website",
     },
   ];
 
@@ -381,14 +401,14 @@ export default function Home() {
           <p className="text-7xl my-6 text-center mt-6 font-semibold text-gray-800 dark:text-white">
             UI Projects
           </p>
-          <div className="columns-3 gap-5">
+          <div className="columns-3 gap-5 mb-10">
             {uiImages.map((image, index) => (
               <div key={index} className="overflow-hidden text-center my-5">
                 <Link href={image.href} className="">
                   <Image
                     src={image.src}
                     alt={image.alt}
-                    className="rounded-lg object-cover"
+                    className="rounded-lg aspect-video object-cover"
                     width={"100%"}
                     height={"100%"}
                   />
