@@ -29,7 +29,7 @@ import web9 from "../public/ParkOpen.jpg";
 import web10 from "../public/PlantPeace.png";
 import web11 from "../public/Dashboard.png";
 import ui5 from "../public/Highland.png";
-import meta from "../public/Metalogic.png";
+import meta from "../public/metalogic.png";
 import poster1 from "../public/MelonPoster.png";
 import poster2 from "../public/SojuPoster.png";
 import poster3 from "../public/PinkFrappe.png";
