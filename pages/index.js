@@ -298,7 +298,7 @@ export default function Home() {
               </p>
               <h4 className="py-4 text-teal-600">Languages I use</h4>
               <p className="text-gray-800 py-1">HTML/CSS and JavaSript</p>
-              <p className="text-gray-800 py-1">JQuery and ReactJS</p>
+              <p className="text-gray-800 py-1">ReactJS and TypeScript</p>
               <p className="text-gray-800 py-1">Sass and Tailwindcss</p>
               <p className="text-gray-800 py-1">Git and Github</p>
             </div>
@@ -317,7 +317,7 @@ export default function Home() {
               <h4 className="py-4 text-teal-600">Experiences I draw from:</h4>
               <p className="text-gray-800 py-1">UI/UX</p>
               <p className="text-gray-800 py-1">Graphic Designing</p>
-              <p className="text-gray-800 py-1">Freelancing</p>
+              <p className="text-gray-800 py-1">Web Development</p>
             </div>
           </div>
         </section>
